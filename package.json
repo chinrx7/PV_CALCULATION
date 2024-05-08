@@ -1,0 +1,16 @@
+{
+  "name": "pv_calculation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "cron-parser": "^4.9.0",
+    "node-schedule": "^2.1.1"
+  }
+}

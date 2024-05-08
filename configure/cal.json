@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "North",
+        "Sites": [
+            "J503",
+            "J603",
+            "J604",
+            "J605",
+            "COOP2-005"
+        ],
+        "Today": [
+            {
+                "Sum": {
+                    "Energy": "WH",
+                    "Power": "W"
+                }
+            },
+            {
+                "Avg": {
+                    "PR": "PR_DAY",
+                    "IRR": "PYRANO"
+                }
+            }
+        ]
+    }
+]
