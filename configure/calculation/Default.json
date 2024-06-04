@@ -1,0 +1,68 @@
+{
+    "W": {
+        "Expr": "AW",
+        "Params": {
+            "AW": {
+                "Prefix": "_W",
+                "TimeStamp": "*"
+            }
+        },
+        "SCAN": "00:05"
+    },
+    "W_EXPECTED": {
+        "Expr": "P * ((KWP/1000) * (1.0 - (PVTEMP-25))*0.0043)",
+        "Params": {
+            "P": {
+                "Prefix": "_PYRANO",
+                "TimeStamp": "*"
+            },
+            "KWP": {
+                "Prefix": "_KWP",
+                "TimeStamp": "*"
+            },
+            "PVTEMP": {
+                "Prefix": "_PVTEMP",
+                "TimeStamp": "*"
+            }
+        },
+        "SCAN": "00:05"
+    },
+    "CAPCACITY": {
+        "Expr": "(AW/KWP)*100",
+        "Params": {
+            "AW": {
+                "Prefix": "_W",
+                "TimeStamp": "*"
+            },
+            "KWP": {
+                "Prefix": "_KWP",
+                "TimeStamp": "*"
+            }
+        },
+        "SCAN": "00:05"
+    },
+    "WH": {
+        "Expr": "WH",
+        "Params": {
+            "WH": {
+                "Prefix": "_WH",
+                "TimeStamp": "*"
+            }
+        },
+        "SCAN": "00:05"
+    },
+    "WH_HOUR": {
+        "Expr": "WH1-WH2",
+        "Params":{
+            "WH1": {
+                "Prefix": "_WH",
+                "TimeStamp": "*"
+            },
+            "WH2": {
+                "Prefix": "_WH",
+                "TimeStamp" : "LBOH"
+            }
+        },
+        "SCAN": "00:05"
+    }
+}

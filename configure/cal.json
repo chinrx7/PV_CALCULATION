@@ -1,26 +1,32 @@
 [
-    {
-        "Name": "North",
-        "Sites": [
-            "J503",
-            "J603",
-            "J604",
-            "J605",
-            "COOP2-005"
-        ],
-        "Today": [
-            {
-                "Sum": {
-                    "Energy": "WH",
-                    "Power": "W"
+  {
+    "Group" : "North",
+    "Sites" : [
+        {
+            "Name" : "J503",
+            "Calculation" : "Default.json",
+            "Params" : [
+                {
+
                 }
-            },
-            {
-                "Avg": {
-                    "PR": "PR_DAY",
-                    "IRR": "PYRANO"
-                }
-            }
-        ]
-    }
+            ]
+        },
+        {
+            "Name" : "J603",
+            "UseDefault" : 1
+        },
+        {
+            "Name" : "J604",
+            "UseDefault" : 1
+        },
+        {
+            "Name" : "J605",
+            "UseDefault" : 1
+        },
+        {
+            "Name" : "COOP2-005",
+            "UseDefault" : 1
+        }
+    ]
+  }
 ]
